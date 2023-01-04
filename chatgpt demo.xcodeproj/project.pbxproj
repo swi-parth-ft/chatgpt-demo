@@ -14,6 +14,8 @@
 		0766D91C296232CF003D4E79 /* chatgpt_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0766D91A296232CF003D4E79 /* chatgpt_demo.xcdatamodeld */; };
 		0766D91E296232CF003D4E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0766D91D296232CF003D4E79 /* Assets.xcassets */; };
 		0766D921296232CF003D4E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0766D91F296232CF003D4E79 /* LaunchScreen.storyboard */; };
+		0766D930296296FD003D4E79 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0766D92F296296FD003D4E79 /* OpenAISwift */; };
+		0766D93229629776003D4E79 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766D93129629776003D4E79 /* ApiCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		0766D91D296232CF003D4E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0766D920296232CF003D4E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0766D922296232CF003D4E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0766D93129629776003D4E79 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0766D930296296FD003D4E79 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				0766D91F296232CF003D4E79 /* LaunchScreen.storyboard */,
 				0766D922296232CF003D4E79 /* Info.plist */,
 				0766D91A296232CF003D4E79 /* chatgpt_demo.xcdatamodeld */,
+				0766D93129629776003D4E79 /* ApiCall.swift */,
 			);
 			path = "chatgpt demo";
 			sourceTree = "<group>";
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = "chatgpt demo";
+			packageProductDependencies = (
+				0766D92F296296FD003D4E79 /* OpenAISwift */,
+			);
 			productName = "chatgpt demo";
 			productReference = 0766D90E296232CF003D4E79 /* chatgpt demo.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 0766D905296232CF003D4E79;
+			packageReferences = (
+				0766D92E296296FD003D4E79 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 0766D90F296232CF003D4E79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +156,7 @@
 				0766D916296232CF003D4E79 /* ViewController.swift in Sources */,
 				0766D912296232CF003D4E79 /* AppDelegate.swift in Sources */,
 				0766D914296232CF003D4E79 /* SceneDelegate.swift in Sources */,
+				0766D93229629776003D4E79 /* ApiCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0766D92E296296FD003D4E79 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0766D92F296296FD003D4E79 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0766D92E296296FD003D4E79 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0766D91A296232CF003D4E79 /* chatgpt_demo.xcdatamodeld */ = {
